@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "attendance-monitoring-using-qr-code:build:production"
+              "buildTarget": "attendance-monitoring-using-qr-code:build:production"
             },
             "development": {
-              "browserTarget": "attendance-monitoring-using-qr-code:build:development"
+              "buildTarget": "attendance-monitoring-using-qr-code:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "attendance-monitoring-using-qr-code:build"
+            "buildTarget": "attendance-monitoring-using-qr-code:build"
           }
         },
         "test": {
