@@ -1,0 +1,26 @@
+{
+  "endpoint": {
+    "prefix": ["endpoint", "openapi:endpoint"],
+    "body": [
+      "/**",
+      " * ${1:method} ${2:endpoint}",
+      " * @summary ${3:summary}",
+      " * @param {${4:paramType}} ${5:paramId}.${6:paramType} - ${7:paramDescription}",
+      " * @param {${8:requestBodyType}} request.body - ${9:requestBodyDescription}",
+      " * @return {${10:responseType}} ${11:status} - ${12:responseDescription} - ${13:responseContentType}",
+      " */"
+    ],
+    "description": "express-jsdoc-swagger endpoint structure"
+  },
+  "component": {
+    "prefix": ["component", "openapi:component", "typedef"],
+    "body": [
+      "/**",
+      " * ${3:definitionDescription}",
+      " * @typedef {${1:definitionType}} ${2:definitionName}",
+      " * @property {${4:propertyType}} ${5:propertyName} - ${6:propertyDescription}",
+      " */"
+    ],
+    "description": "express-jsdoc-swagger definition structure"
+  }
+}
